@@ -1,0 +1,17 @@
+[{
+        "codigo": 1,
+        "nombre": "Menor a UF 1.000"
+    },
+    {
+        "codigo": 2,
+        "nombre": "Entre UF 1.000 y 3.500"
+    },
+    {
+        "codigo": 3,
+        "nombre": "Entre UF 3.500 y 25.000"
+    },
+    {
+        "codigo": 4,
+        "nombre": "Mayor a UF 25.000"
+    }
+]

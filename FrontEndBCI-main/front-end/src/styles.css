@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "SSP";
+    src: url(assets/fonts/SourceSansPro-Regular.ttf) format("truetype");
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    /* font-family: overpass, Arial, sans-serif; */
+    font-family: "SSP" !important;
+}
+
+.btn-custom {
+    background-color: rgb(248, 120, 73);
+}
+
+.bd-example {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+    background-color: #FF5600 !important;
+}
+
+.mat-h1,
+.mat-headline,
+.mat-typography h1 {
+    font-family: "SSP" !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: #2A3F6E !important;
+}
+
+.mat-h2,
+.mat-title,
+.mat-typography h2 {
+    font-family: "SSP" !important;
+    font-size: 18px !important;
+    color: #666666 !important;
+}
+
+.mat-h5,
+.mat-typography h5 {
+    font-family: "SSP" !important;
+    font-size: 18px !important;
+    color: #2A3F6E !important;
+}

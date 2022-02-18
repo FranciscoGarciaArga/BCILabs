@@ -1,0 +1,17 @@
+[{
+        "codigo": 1,
+        "nombre": "Cuotas gratis de seguros automotriz"
+    },
+    {
+        "codigo": 2,
+        "nombre": "Cuenta corriente gratis + BCI Pagos"
+    },
+    {
+        "codigo": 3,
+        "nombre": "Conciliación Bancaria vía API"
+    },
+    {
+        "codigo": 4,
+        "nombre": "Pago de nóminas en línea"
+    }
+]

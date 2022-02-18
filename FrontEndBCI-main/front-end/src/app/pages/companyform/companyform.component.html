@@ -1,0 +1,71 @@
+<div class="d-flex justify-content-between mb-3">
+    <div class="p-2">
+        <div class="card-body border-0">
+            <h3 class="card-title"><strong>¡Perfecto!</strong></h3>
+            <p class="card-text">Para poder conocerte mejor, solo tenemos que hacerte un par de preguntas y así que puedas optar por estos beneficios y productos:</p>
+        </div>
+    </div>
+</div>
+
+<div class="bd-example">
+    <form (ngSubmit)="guardar( f )" #f="ngForm">
+        <h3 class="card-title"><strong>Indícanos donde está situada tu empresa</strong></h3>
+
+        <div class="form-row">
+            <mat-form-field appearance="fill" style="margin-right: 5px;">
+                <mat-label>Seleccione una Región</mat-label>
+                <mat-select (selectionChange)="onChangeRegion($event)" [(ngModel)]="company.regionId" name="region" required>
+                    <mat-option *ngFor="let region of regiones" [value]="region">
+                        {{region.nombre}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Seleccione una comuna</mat-label>
+                <mat-select [(ngModel)]="company.comunaId" name="comuna" required>
+                    <mat-option *ngFor="let comuna of comunas" [value]="comuna.nombre">
+                        {{comuna.nombre}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="form-row">
+            <mat-form-field class="full-width" appearance="fill">
+                <mat-label>Dirección</mat-label>
+                <input matInput placeholder="Dirección" [(ngModel)]="company.address" name="address" required>
+            </mat-form-field>
+        </div>
+
+        <div class="form-row pt-2">
+            <mat-form-field appearance="fill" style="margin-right: 5px; width: 50%;">
+                <mat-label>Seleccione un Nivel de Ventas</mat-label>
+                <mat-select [(ngModel)]="company.salesAmountId" name="salesAmount" required>
+                    <mat-option *ngFor="let sale of sales" [value]="sale.codigo">
+                        {{sale.nombre}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+        <h3 class="card-title"><strong>Cliquea acá el producto que más te intereso de esta oferta</strong></h3>
+
+        <mat-selection-list [(ngModel)]="products" name="products" (selectionChange)="onGroupsChange(shoes.selectedOptions.selected)" #shoes required>
+            <mat-list-option *ngFor="let profile of profiles" [value]="profile.codigo">
+                {{profile.nombre}}
+            </mat-list-option>
+            <mat-list-item role="listitem">
+                <input matInput #message maxlength="256" placeholder="Escriba otro producto que desee solicitar..." [(ngModel)]="otherProduct" name="otherProduct">
+            </mat-list-item>
+        </mat-selection-list>
+
+        <div class="form-row pt-5">
+            <mat-checkbox [(ngModel)]="confirmSendInfo" name="disabledButtonSave" required>Autorizo a Defontana a compartir esta información, con Banco de Crédito e Inversiones, para diseñar una propuesta para mi empresa y contactar con fines comerciales.</mat-checkbox>
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="previous()">Volver</button>
+            <button type="submit" class="btn btn-primary btn-custom" [disabled]="!confirmSendInfo">Siguiente</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,94 @@
+::ng-deep .mat-tab-header .mat-tab-labels .mat-tab-label {
+    height: 25vh;
+    width: 25vh;
+}
+
+
+/* ::ng-deep .mat-tab-body-wrapper .mat-tab-body {
+    width: 100px;
+    height: 50vh;
+} */
+
+.container {
+    max-height: 120vh;
+}
+
+.container-tab {
+    /* width: 50%; */
+    height: 30%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.color-blue-normal {
+    color: #2772cc!important;
+}
+
+.h2-lg {
+    font-size: 1rem;
+}
+
+.circles-heading-center,
+.circles-heading-center-right,
+.circles-heading-center-left {
+    text-align: center;
+}
+
+.text-digital-activation {
+    margin: 5em;
+}
+
+.display-3-lg {
+    font-size: 1.875rem;
+}
+
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.shadow-normal,
+.shadow-normal-hover {
+    box-shadow: 0 2px 8px rgba(55, 71, 79, .2);
+    -moz-box-shadow: 0 2px 8px rgba(55, 71, 79, .2);
+    -webkit-box-shadow: 0 2px 8px rgba(55, 71, 79, .2);
+}
+
+.text-justified {
+    text-align: justify;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.h1 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2A3F6E;
+}
+
+.h2 {
+    font-size: 18px;
+    color: #666666;
+}
+
+.h3 {
+    font-size: 16px;
+    color: #666666;
+}
+
+.textP {
+    font-family: "SSP" !important;
+    font-size: 18px !important;
+    color: #666666 !important;
+}

@@ -1,0 +1,60 @@
+<div class="d-flex justify-content-between mb-3">
+    <div class="p-2"><img src="https://cdn3.bci.cl/uploads/e682d72b-13b1-49a3-93ce-20f6252e1d17/original/logo_bci_negro.svg" alt="logo Banco BCI"></div>
+    <div class="p-2 logodefontana"><img src="https://www.defontana.com/cl/wp-content/themes/defontanatheme/dist/images/xdefontana-logo.png.pagespeed.ic.lfVD7ChNfp.png" alt="" title=""></div>
+</div>
+
+<div class="jumbotron">
+    <h1 class="display-3">¡Felicitaciones!</h1>
+    <p class="lead">Tienes pre-aprobado tu activación de Banca Digital con BCI</p>
+
+    <div class="row">
+        <div class="col-md-12">
+            <!-- <div class="rounded-md shadow-normal-hover p-3 d-flex justify-content-md-start align-items-center h-110 mb-4">            
+            <mat-label>Productos pre-aprobados</mat-label>
+            <input matInput disabled value="Cuenta corriente POS de BCI Pagos">
+        </div> -->
+            <mat-form-field class="full-width" appearance="fill">
+                <mat-label>Productos pre-aprobados</mat-label>
+                <input class="input-data" matInput disabled [(ngModel)]="products" name="products">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <mat-form-field class="full-width" appearance="fill">
+                <mat-label>Datos empresa</mat-label>
+                <input class="input-data" matInput disabled [(ngModel)]="company" name="company">
+            </mat-form-field>
+        </div>
+        <div class="col-md-4">
+            <mat-form-field class="full-width" appearance="fill">
+                <mat-label>Fecha solicitud</mat-label>
+                <input class="input-data" matInput disabled [(ngModel)]="requestDate">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row status-img">
+        <img src="../../../assets/img/statusrequest.png" alt="" title="">
+    </div>
+    <div class="row pt-5">
+        <div class="col-md-2">
+            <img src="../../../assets/img/mono.png" alt="" title="">
+        </div>
+        <div class="col-md-6">
+            <div id="cardTitle" class="card-body rounded shadow">
+                <h5 class="card-title">Hola [Nombre],</h5>
+                <p class="card-text">Si tienes más dudas o preguntas, puedes contactarte con un o una ejecutiva, pincha <b>aquí</b>.</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" (click)="open()" data-target="#modalPoll">Launch modal</button> -->
+
+<!-- <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="previous()">Volver</button>
+    <button type="button" class="btn btn-primary btn-custom" (click)="advance()">Enviar</button>
+</div> -->

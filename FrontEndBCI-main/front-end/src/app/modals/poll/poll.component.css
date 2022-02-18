@@ -1,0 +1,62 @@
+.modal-header {
+    background-color: #33b5e5;
+}
+
+.heading {
+    margin: 0;
+    padding: .3rem;
+    font-size: 1.15rem;
+    color: #fff;
+}
+
+button.close {
+    color: #fff;
+}
+
+.color-file {
+    font-size: 3em;
+    color: #33b5e5;
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+}
+
+.form-check-input {
+    position: absolute;
+    margin-top: .3rem;
+    margin-left: -1.25rem;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+}
+
+.mb-4,
+.my-4 {
+    margin-bottom: 1.5rem!important;
+}
+
+.modal-body {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.rating-list li {
+    float: right;
+    color: #ddd;
+    padding: 10px 5px;
+}
+
+.rating-list li:hover,
+.rating-list li:hover~li,
+.rating-list li.selected {
+    color: #ffd700;
+}
+
+.rating-list {
+    display: inline-block;
+    list-style: none;
+}

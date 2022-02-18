@@ -1,0 +1,49 @@
+<div class="modal-header">
+    <p class="heading lead">Encuesta de satisfacción
+    </p>
+
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close" (click)="close()">
+        <span aria-hidden="true" class="white-text">×</span>
+    </button>
+</div>
+
+<div class="modal-body">
+    <div class="text-center">
+        <fa-icon class="fa color-file" [icon]="faFile"></fa-icon>
+        <!-- <i class="fa fa-file-text-o fa-4x mb-3 animated rotateIn"></i> -->
+        <p>
+            <strong>Tu opinión nos importa</strong>
+        </p>
+        <p>¿Tienes algunas ideas de mejorar nuestro producto?
+            <strong>Danos tu opinión.</strong>
+        </p>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-12 text-center" style="font-size: 1.5em;">
+            <ul class="list-inline rating-list" *ngFor="let star of stars" style="display: inline-block">
+                <li (click)="countStar(star)" [ngClass]="{'selected': (star <= selectedValue)}">
+                    <fa-icon class="fa" [icon]="faStar"></fa-icon>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <p class="text-center">
+        <strong>¿Qué te gustaría mejorar?</strong>
+    </p>
+    <div class="md-form">
+        <textarea type="text" class="md-textarea form-control" rows="3" [(ngModel)]="opinion" name="opinion"></textarea>
+        <label for="form79textarea">Tu opinión nos importa</label>
+    </div>
+
+</div>
+
+<div class="modal-footer justify-content-center">
+    <a type="button" class="btn btn-primary waves-effect waves-light" (click)="save()">Enviar
+        <i class="fa fa-paper-plane ml-1"></i>
+    </a>
+    <a type="button" class="btn btn-outline-primary waves-effect" (click)="close()" data-dismiss="modal">Cancelar</a>
+</div>

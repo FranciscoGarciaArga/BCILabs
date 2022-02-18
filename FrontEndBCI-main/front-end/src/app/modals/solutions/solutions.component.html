@@ -1,0 +1,48 @@
+<div class="modal-header">
+    <h4 class="modal-title"><strong>¿Que solución te interesaría más poder resolver?</strong></h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="d-flex flex-column bd-example">
+        <div class="p-2 form-row form-check border-bottom shadow">
+            <input class="form-check-input ml-1" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label ml-4" for="flexCheckDefault">
+          Factoring
+        </label>
+        </div>
+        <div class="p-2 form-row form-check border-bottom shadow mt-1">
+            <input class="form-check-input ml-1" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label ml-4" for="flexCheckDefault">
+          Pago de proveedores y sueldos
+        </label>
+        </div>
+        <div class="p-2 form-row form-check border-bottom shadow mt-1">
+            <input class="form-check-input ml-1" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label ml-4" for="flexCheckDefault">
+          Financiamiento
+        </label>
+        </div>
+        <div class="p-2 form-row form-check border-bottom shadow mt-1">
+            <input class="form-check-input ml-1" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label ml-4" for="flexCheckDefault">
+          Ninguna, no necesito soluciones financieras
+        </label>
+        </div>
+        <div class="p-2 form-row border-bottom shadow mt-1">
+            <div class="form-check col-md-4">
+                <input class="form-check-input ml-1" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label ml-4" for="flexCheckDefault">Otro</label>
+            </div>
+            <div class="form-check col-md-8">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Cancelar</button>
+    <button type="button" class="btn btn-primary btn-custom" (click)="save()">Aceptar</button>
+</div>

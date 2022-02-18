@@ -1,0 +1,133 @@
+.bcilogo {
+    padding-top: 1em;
+}
+
+.monologo {
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    max-height: 100px;
+    height: auto;
+    padding-top: 1em;
+}
+
+.logodefontana img {
+    max-height: 30px;
+}
+
+#cardTitle {
+    background-color: rgb(236, 241, 248);
+}
+
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(212, 223, 241);
+    border-radius: 50%;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.card {
+    margin-left: 10px;
+}
+
+.card-header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-solutions {
+    background-color: rgb(248, 120, 73);
+    font-size: medium;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
+    vertical-align: middle;
+}
+
+a:hover {
+    box-shadow: 0 .125rem .25rem orangered;
+}
+
+.cardsFrame {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.titleBox {
+    font-size: medium;
+    color: #2A3F6E !important;
+    font-family: "SSP" !important;
+}
+
+.bodyBox {
+    font-size: medium;
+    color: rgb(0, 0, 129);
+    color: #2A3F6E !important;
+}
+
+.cardTitle {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "SSP" !important;
+    color: #2A3F6E;
+    margin: 0;
+}
+
+.cardBody {
+    font-size: 18px;
+    font-family: "SSP" !important;
+    color: #666666;
+}
+
+
+.triangle-isosceles {
+  position:relative;
+  padding:15px;
+  margin:1em 0 3em;
+  color:#000;
+  background:#ECF1F8; /* default background for browsers without gradient support */
+  /* css3 */
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#ECF1F8), to(#ECF1F8));
+  background:-moz-linear-gradient(#ECF1F8, #ECF1F8);
+  background:-o-linear-gradient(#ECF1F8, #ECF1F8);
+  background:linear-gradient(#ECF1F8, #ECF1F8);
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.triangle-isosceles.left {
+  margin-left:50px;
+  background:#ECF1F8;
+}
+
+
+
+.triangle-isosceles:after {
+  content:"";
+  position:absolute;
+  bottom:-15px; 
+  left:50px; 
+  border-width:15px 15px 0;
+  border-style:solid;
+  border-color:#ECF1F8 transparent;
+  display:block;
+  width:0;
+}
+
+
+
+
+.triangle-isosceles.left:after {
+  top:16px; /* controls vertical position */
+  left:-50px; /* value = - border-left-width - border-right-width */
+  bottom:auto;
+  border-width:10px 50px 10px 0;
+  border-color:transparent #ECF1F8;
+}
